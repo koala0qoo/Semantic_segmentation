@@ -1,7 +1,8 @@
-# 第十周作业
+# FCN图像语义分割
 
-### 作业内容
-本作业以week9视频中讲述的FCN为基础，构建一个FCN训练模型，要求学员实现代码中缺失的部分并使用自己的实现跑出比较好的结果。
+
+### 项目简介
+采用Pascal2 VOC2012的数据中的语义分割数据，应用TensorFlow框架和FCN-8s模型，训练一个可以对20类物体进行语义分割的模型。
 
 代码地址：https://github.com/koala0qoo/quiz-w10
 
@@ -12,9 +13,7 @@
 ### 文件说明
 convert_fcn_dataset.py 用于生成tfrecord格式数据
 
-train.py 用于训练及验证，包含FCN-8x实现过程
-
-log_capture.png 为输出日志截图
+train.py 用于训练及验证，包含FCN-8s实现过程
 
 val_2800_*.jpg 为运行2800个step后的验证图片
 
