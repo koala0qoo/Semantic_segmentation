@@ -4,11 +4,9 @@
 ### 项目简介
 采用Pascal2 VOC2012的数据中的语义分割数据，应用TensorFlow框架和FCN-8s模型，训练一个可以对20类物体进行语义分割的模型。
 
-代码地址：https://github.com/koala0qoo/quiz-w10
-
-数据集地址：https://www.tinymind.com/yh001/datasets/data-quiz-w10
-
-运行地址：https://www.tinymind.com/executions/cfncevbn
+- 代码地址：https://github.com/koala0qoo/quiz-w10
+- 数据集地址：https://www.tinymind.com/yh001/datasets/data-quiz-w10
+- 运行地址：https://www.tinymind.com/executions/cfncevbn
 
 ### 文件说明
 
