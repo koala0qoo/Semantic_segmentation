@@ -53,11 +53,10 @@ def dict_to_tf_example(data, label):
     encoded_label = img_mask.astype(np.uint8).tobytes()
 
     height, width = img_label.shape[0], img_label.shape[1]
-    if height < vgg_16.default_image_size or width < vgg_16.default_image_size:
-        # 保证最后随机裁剪的尺寸
+    if height < vgg_16.default_image_size or width < vgg_16.default_image_size        
         return None
 
-    # Your code here, fill the dict
+    # feature dict
     feature_dict = {
         'image/height': dataset_util.int64_feature(height),
         'image/width': dataset_util.int64_feature(width),
@@ -71,7 +70,6 @@ def dict_to_tf_example(data, label):
 
 
 def create_tf_record(output_filename, file_pars):
-    # Your code here
     writer = tf.python_io.TFRecordWriter(output_filename)
     for data, label in file_pars:
         #if idx % 100 == 0:
