@@ -15,7 +15,7 @@ convert_fcn_dataset.py 用于生成tfrecord格式数据
 
 train.py 用于训练及验证，包含FCN-8s实现过程
 
-val_2800_*.jpg 为运行2800个step后的验证图片
+results 文件夹包含部分验证结果
 
 ### 运行结果
 运行log输出：
